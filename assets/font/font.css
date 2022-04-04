@@ -1,0 +1,47 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src        : url(Ubuntu-Light.ttf);
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Ubuntu-LightItalic';
+    src        : url(Ubuntu-LightItalic.ttf);
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Ubuntu-Italic';
+    src        : url(Ubuntu-Italic.ttf);
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src        : url(Ubuntu-Regular.ttf);
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src        : url(Ubuntu-Medium.ttf);
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Ubuntu-MediumItalic';
+    src        : url(Ubuntu-MediumItalic.ttf);
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src        : url(Ubuntu-Bold.ttf);
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Ubuntu-BoldItalic';
+    src        : url(Ubuntu-BoldItalic.ttf);
+}

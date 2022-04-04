@@ -1,0 +1,567 @@
+@import url('../font/font.css');
+
+
+html,
+body {
+    font-family: 'Ubuntu', sans-serif;
+    min-height : 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Color                                   */
+/* -------------------------------------------------------------------------- */
+/* Text */
+.dark-light {
+    color: #696969;
+}
+
+.dark {
+    color: #373737;
+}
+
+/* background */
+.bg-blue-logo {
+    background-color: #03989E;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Typography                                 */
+/* -------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Ubuntu-Medium", sans-serif;
+}
+
+p {
+    font-family: "Ubuntu-light", sans-serif;
+}
+
+
+/* -------------------------------- Font Size ------------------------------- */
+.ubuntu-light {
+    font-family: "Ubuntu-Light", sans-serif;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu-Regular", sans-serif;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu-Medium", sans-serif;
+}
+
+.ubuntu-bold {
+    font-family: "Ubuntu-Bold", sans-serif;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Radius                                   */
+/* -------------------------------------------------------------------------- */
+.rad-15 {
+    border-radius: 15px;
+}
+
+.rad-top-15 {
+    border-radius: 15px 15px 0 0;
+}
+
+.rad-bottom-15 {
+    border-radius: 0 0 15px 15px;
+}
+
+.rad-left-15 {
+    border-radius: 15px 0 0 15px;
+}
+
+.rad-right-15 {
+    border-radius: 0 15px 15px 0;
+}
+
+.rad-25 {
+    border-radius: 25px;
+}
+
+.rad-top-25 {
+    border-radius: 25px 25px 0 0;
+}
+
+.rad-bottom-25 {
+    border-radius: 0 0 25px 25px;
+}
+
+.rad-left-25 {
+    border-radius: 25px 0 0 25px;
+}
+
+.rad-right-25 {
+    border-radius: 0 25px 25px 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Button                                   */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
+/* --------------------------------- Top Bar -------------------------------- */
+.top-bar {
+    background-color: #17A2B8;
+    height          : 150px;
+}
+
+.top-bar div i {
+    font-size: 2em;
+}
+
+@media (max-width: 1024px) {
+
+    .top-bar div i {
+        font-size: 1em;
+    }
+
+}
+
+/* ----------------------------- Navigation Bar ----------------------------- */
+.logo {
+    max-height: 4.5em;
+}
+
+.menu-click:hover {
+    cursor: pointer;
+    color : #A0E4F1 !important;
+}
+
+.menu-down {
+    display      : block;
+    visibility   : hidden;
+    opacity      : 0;
+    transform    : translateY(0px);
+    transition   : 0.2s linear all;
+    margin-left  : auto;
+    margin-right : auto;
+    width        : 95%;
+    border-radius: 0 0 25px 25px;
+    z-index      : 999;
+}
+
+.menu-down.show {
+    display      : block;
+    visibility   : visible;
+    opacity      : 1;
+    transform    : translateY(0px);
+    transition   : 0.2s linear all;
+    width        : 95%;
+    margin-left  : auto;
+    margin-right : auto;
+    border-radius: 0 0 25px 25px;
+    z-index      : 999;
+}
+
+.menu-down ul {
+    list-style-type: none;
+}
+
+.menu-down .card-body {
+    padding: 0;
+}
+
+.menu-list {
+    display   : flex;
+    overflow: hidden;
+    margin    : 0 3em 0 3em;
+}
+
+.menu-list:hover {
+    display   : flex;
+    overflow-x: visible;
+    margin    : 0 3em 0 3em;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background   : #c2c2c2;
+    border-radius: 15px;
+}
+
+.menu-list .item {
+    min-width: 250px;
+}
+
+.menu-list div i {
+    font-size: 1em;
+}
+
+#scroll-left,
+#scroll-right {
+    text-decoration: none;
+    color          : #ccc;
+}
+
+/* Owl Carousel */
+.menu-list .owl-nav .owl-prev:hover {
+    background-color: #ffffff00;
+    color           : #696969;
+}
+
+.menu-list .owl-nav .owl-next:hover {
+    background-color: #ffffff00;
+    color           : #696969;
+}
+
+.menu-list .item h4:hover {
+    color: #A0E4F1;
+}
+
+.menu-list .item i:hover {
+    color: #A0E4F1;
+}
+
+@media (max-width: 1024px) {
+
+    .nav-menu h2 {
+        font-size: 1em;
+    }
+
+    .nav-menu h3 {
+        font-size: 0.8em;
+    }
+
+    .nav-menu i {
+        font-size: 0.8em !important;
+    }
+
+    .logo {
+        max-height: 2.5em;
+    }
+
+    .menu-list {
+        display   : flex;
+        overflow-x: scroll;
+        margin    : 0 3em 0 3em;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Main                                    */
+/* -------------------------------------------------------------------------- */
+/* ------------------------------ Presentation ------------------------------ */
+.presentation {
+    width           : 100%;
+    height          : 80vh;
+    background-color: rgba(63, 73, 83, 0.8);
+    z-index         : -1000;
+}
+
+.polkadot {
+    background-image   : radial-gradient(#e6e6e6 20%, transparent 20%), radial-gradient(#FAFAFA 20%, transparent 20%);
+    background-color   : #F1FAFB;
+    background-position: 0 0, 50px 50px;
+    background-size    : 30px 30px;
+    width              : 100%;
+    height             : 100%;
+}
+
+.polkadot .content {
+    padding-top: 100px !important;
+}
+
+@media (max-width: 1024px) {
+    .presentation {
+        width           : 100%;
+        height          : 50vh;
+        background-color: rgba(63, 73, 83, 0.8);
+        z-index         : -1000;
+    }
+}
+
+@media (max-width: 589px) {
+    .presentation {
+        width           : 100%;
+        height          : 100vh;
+        background-color: rgba(63, 73, 83, 0.8);
+        z-index         : -1000;
+    }
+}
+
+/* ---------------------------------- Offer --------------------------------- */
+.offer {
+    width           : 100%;
+    height          : 100vh;
+    background-color: #FFFFFF;
+}
+
+.offer div i {
+    font-size  : 5em;
+    text-shadow: 5px 5px 5px #888888;
+    color      : #37AA9C;
+}
+
+.icon-offer {
+    transition: transform .2s;
+}
+
+.icon-offer:hover {
+    transform: scale(1.5);
+}
+
+@media (max-width: 1024px) {
+
+    .offer {
+        width           : 100%;
+        height          : 50vh;
+        background-color: #FFFFFF;
+    }
+
+    .offer div i {
+        font-size  : 4em;
+        text-shadow: 2px 2px 2px #888888;
+    }
+}
+
+/* -------------------------------- Car List -------------------------------- */
+.car-list {
+    top   : 50em;
+    height: 100vh;
+}
+
+/* Car 1 */
+.car-list-1 {
+    width     : 100%;
+    height    : 50vh;
+    background: conic-gradient(from 180deg, #17A2B8, #A0E4F1);
+}
+
+.car-list-1 .card {
+    width  : 50%;
+    height : 45vh;
+    float  : right;
+    z-index: 9999;
+}
+
+.car-list-1 .car-product-1 {
+    position: absolute;
+}
+
+.car-list-1 .car-product-1 img {
+    width : 350px;
+    margin: 150px 150px;
+}
+
+.car-list-1 .card i {
+    font-size: 5em;
+    cursor   : pointer;
+}
+
+/* Car 2 */
+.car-list-2 {
+    width     : 100%;
+    height    : 50vh;
+    background: conic-gradient(from 180deg, #37AA9C, #94F3E4);
+}
+
+.car-list-2 .card {
+    width : 50%;
+    top   : 50%;
+    height: 45vh;
+    float : left;
+}
+
+.car-list-2 .car-product-2 {
+    position: absolute;
+    right   : 0px;
+}
+
+.car-list-2 .car-product-2 img {
+    width : 350px;
+    margin: 350px 150px;
+}
+
+.car-list-2 .card i {
+    font-size: 5em;
+    cursor   : pointer;
+}
+
+/* Medium Laptop */
+@media (max-width: 1367px) {
+
+    .car-list-1 .car-product-1 img {
+        width : 350px;
+        margin: 80px 50px;
+    }
+
+    .car-list-2 .car-product-2 img {
+        width : 350px;
+        margin: 250px 100px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1028px) {
+
+    .car-list {
+        margin-top: 160px;
+    }
+
+    /* Car 1 */
+    .car-list-1 {
+        width     : 100%;
+        height    : 50vh;
+        background: conic-gradient(from 180deg, #17A2B8, #A0E4F1);
+    }
+
+    .car-list-1 .car-product-1 img {
+        width : 300px;
+        margin: 100px 50px;
+    }
+
+    .car-list-1 .card {
+        width  : 50%;
+        height : 50vh;
+        float  : right;
+        z-index: 9999;
+    }
+
+    /* Car 2 */
+    .car-list-2 {
+        width     : 100%;
+        height    : 50vh;
+        background: conic-gradient(from 180deg, #37AA9C, #94F3E4);
+    }
+
+    .car-list-2 .car-product-2 img {
+        width : 300px;
+        margin: 250px 50px;
+    }
+
+    .car-list-2 .card {
+        width  : 50%;
+        top    : 50%;
+        height : 50vh;
+        float  : left;
+        z-index: 9999;
+    }
+
+}
+
+/* Mobile Medium */
+@media (max-width: 589px) {
+    .car-list {
+        margin-top: 700px;
+    }
+
+    /* Car 1 */
+    .car-list-1 .car-product-1 img {
+        width : 200px;
+        margin: 100px 50px;
+    }
+
+    /* Car 2 */
+    .car-list-2 .car-product-2 img {
+        width : 200px;
+        margin: 250px 50px;
+    }
+
+}
+
+/* Mobile Small */
+@media (max-width: 456px) {
+
+    .car-list {
+        margin-top: 800px;
+    }
+
+    /* Car 1 */
+    .car-list-1 .car-product-1 img {
+        width : 150px;
+        margin: 100px 10px;
+    }
+
+    /* Car 2 */
+    .car-list-2 .car-product-2 img {
+        width : 150px;
+        margin: 250px 10px;
+    }
+
+}
+
+/* Fold Phone */
+@media (max-width: 298px) {
+
+    .car-list {
+        margin-top: 800px;
+    }
+
+    /* Car 1 */
+    .car-list-1 .car-product-1 img {
+        width : 100px;
+        margin: 100px 10px;
+    }
+
+    /* Car 2 */
+    .car-list-2 .car-product-2 img {
+        width : 100px;
+        margin: 250px 10px;
+    }
+
+}
+
+/* ---------------------------- Testimonial List ---------------------------- */
+.testimonial {
+    margin-top: 30vh;
+    height    : 70vh;
+}
+
+.stacked-cards .card {
+    width: 600px;
+}
+
+.stacked-cards ul li {
+    box-shadow: none;
+}
+
+.stacked-cards ul li.active {
+    box-shadow: none;
+}
+
+@media (max-width: 960px) {
+    .stacked-cards .card {
+        width: 200px;
+        height: auto;
+    }
+
+    .testimonial {
+        margin-top: 30vh;
+        height    : 80vh;
+    }
+}
+
+@media (max-width: 389px) {
+    .testimonial {
+        margin-top: 30vh;
+        height    : 100vh;
+    }
+
+    .stacked-cards .card {
+        width: 200px;
+    }
+}
