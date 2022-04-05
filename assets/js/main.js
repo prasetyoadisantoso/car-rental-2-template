@@ -1,5 +1,7 @@
 // AOS Function
-AOS.init();
+$(function () {
+    AOS.init();
+});
 
 // Open Menu
 $(function () {
@@ -71,6 +73,7 @@ $(function () {
         layout: "slide",
         transformOrigin: "center",
     });
-    stackedCard.init();
+
+    stackedCard.init();   
 });
 

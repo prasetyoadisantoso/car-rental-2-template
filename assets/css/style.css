@@ -228,11 +228,11 @@ p {
     color           : #696969;
 }
 
-.menu-list .item h4:hover {
+.menu-list .item .part:hover {
     color: #A0E4F1;
 }
 
-.menu-list .item i:hover {
+.menu-list .item .part:hover {
     color: #A0E4F1;
 }
 
@@ -321,6 +321,7 @@ p {
 }
 
 .icon-offer:hover {
+    color: #A0E4F1;
     transform: scale(1.5);
 }
 
@@ -368,7 +369,8 @@ p {
 }
 
 .car-list-1 .card i {
-    font-size: 5em;
+    font-size: 10em;
+    font-weight: bold;
     cursor   : pointer;
 }
 
@@ -397,7 +399,8 @@ p {
 }
 
 .car-list-2 .card i {
-    font-size: 5em;
+    font-size: 10em;
+    font-weight: bold;
     cursor   : pointer;
 }
 
