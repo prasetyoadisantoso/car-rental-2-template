@@ -30,15 +30,34 @@ $(function () {
 
 // Car List 1
 $(function () {
+    var num = '';
     $('#next').click(function () {
+        // $("#car-image-1").hide();
+        $("#car-image-1").hide("slide", { direction: "up" }, 400);
+        if (num === '') {
+            var car = 'assets/dataset/car-:nums.json';
+            num = 1;
+        } else if (num > 2){
+            var car = 'assets/dataset/car-:nums.json';
+            num = 1;
+        } else {
+            var car = 'assets/dataset/car-:nums.json';
+            num = num;
+        }
+        car = car.replace(':nums', num);
         $.ajax({
-            url: 'assets/dataset/car-1.json',
+            url: car,
             type: "GET",
             dataType: "json",
             success: function (data) {
-                $("#car-image-1").attr("src", data.image)
                 $("#car-brand-1").html(data.brand)
                 $("#car-name-1").html(data.name)
+                num += 1;
+                setTimeout(function(){
+                    $("#car-image-1").attr("src", data.image);
+                    $("#car-image-1").show("slide", { direction: "down" }, 400);
+                }, 500);
+                
             },
             error: function (error) {
                 console.log("Error:");
@@ -47,15 +66,32 @@ $(function () {
         });
     });
 
+    var nums = '';
     $('#previous').click(function () {
+        $("#car-image-2").hide("slide", { direction: "up" }, 400);
+        if (nums === '') {
+            var car = 'assets/dataset/car-:nums.json';
+            nums = 2;
+        } else if (nums < 1){
+            var car = 'assets/dataset/car-:nums.json';
+            nums = 2;
+        } else {
+            var car = 'assets/dataset/car-:nums.json';
+            nums = nums;
+        }
+        car = car.replace(':nums', nums);
         $.ajax({
-            url: 'assets/dataset/car-2.json',
+            url: car,
             type: "GET",
             dataType: "json",
             success: function (data) {
-                $("#car-image-2").attr("src", data.image)
                 $("#car-brand-2").html(data.brand)
                 $("#car-name-2").html(data.name)
+                nums -= 1;
+                setTimeout(function(){
+                    $("#car-image-2").attr("src", data.image);
+                    $("#car-image-2").show("slide", { direction: "down" }, 400);
+                }, 500);
             },
             error: function (error) {
                 console.log("Error:");
@@ -74,6 +110,6 @@ $(function () {
         transformOrigin: "center",
     });
 
-    stackedCard.init();   
+    stackedCard.init();
 });
 
